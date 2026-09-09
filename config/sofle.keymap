@@ -151,7 +151,7 @@
         };
 
         layer_4 {
-            display-name = "/(T m T)\";
+            display-name = "/(T m T)\\";
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp STAR  &trans  &trans     &trans
