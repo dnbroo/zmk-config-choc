@@ -54,18 +54,19 @@
 ---
 include:
 
-  ### CORNE START ###
-  - board: nice_nano_v2
-    shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\" -DCONFIG_NICE_OLED_WIDGET_MODIFIERS_INDICATORS_FIXED=n
-    artifact-name: nice_corne_left_oled_rgb
-    snippet: rgb-config studio-rpc-usb-uart
-    # nice_nano_v2 + nice_oled + RGB (RIGHT)
-  - board: nice_nano_v2
-    shield: corne_right nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\" -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL=n -DCONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_KM=y -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
-    artifact-name: nice_corne_right_oled_rgb
-    snippet: rgb-config
+ # ### CORNE START ###
+ # - board: nice_nano_v2
+ #   shield: corne_left nice_oled
+ #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\" -DCONFIG_NICE_OLED_WIDGET_MODIFIERS_INDICATORS_FIXED=n
+ #   artifact-name: nice_corne_left_oled_rgb
+ #   snippet: rgb-config studio-rpc-usb-uart
+ #   # nice_nano_v2 + nice_oled + RGB (RIGHT)
+ # - board: nice_nano_v2
+ #   shield: corne_right nice_oled
+ #   cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Oled_RGB\" -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL=n -DCONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_KM=y 
+ #  -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
+ #   artifact-name: nice_corne_right_oled_rgb
+ #   snippet: rgb-config
   
   ### SOFLE START ###
   - board: nice_nano_v2
@@ -79,29 +80,30 @@ include:
     artifact-name: nice_sofle_right_rgb_oled
     snippet: rgb-config
 
-  ### SWEEP START ###
-  - board: nice_nano_v2
-    shield: sweep_left
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
-    artifact-name: nice_sweep_left
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
-    shield: sweep_right
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
-    artifact-name: nice_sweep_right
-
-  ### LILY58 START ###
-  # nice!oled lily58
-  - board: nice_nano_v2
-    shield: lily58_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lily58_Oled\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
-    artifact-name: nice_lily58_left_oled
-    snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
-    shield: lily58_right nice_oled
-    cmake-args: -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CAT=n -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_KM=y -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
-    artifact-name: nice_lily58_right_oled
+#  ### SWEEP START ###
+#  - board: nice_nano_v2
+#    shield: sweep_left
+#    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
+#    artifact-name: nice_sweep_left
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#  - board: nice_nano_v2
+#    shield: sweep_right
+#    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sweep\"
+#    artifact-name: nice_sweep_right
+#
+#  ### LILY58 START ###
+#  # nice!oled lily58
+#  - board: nice_nano_v2
+#    shield: lily58_left nice_oled
+#    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"lily58_Oled\"  -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000
+#    artifact-name: nice_lily58_left_oled
+#    snippet: studio-rpc-usb-uart
+#  - board: nice_nano_v2
+#    shield: lily58_right nice_oled
+#    cmake-args: -DCONFIG_ZMK_SLEEP=y -DCONFIG_ZMK_IDLE_TIMEOUT=60000 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CAT=n -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_KM=y
+#   -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_Y=-4 -DCONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CUSTOM_X=0
+#    artifact-name: nice_lily58_right_oled
 
   # # peripheral_left
   # - board: nice_nano_v2
