@@ -1,0 +1,107 @@
+layout: {zmk_keyboard: sweep}
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - S
+  - D
+  - {t: F, h: left}
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: '''', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Z, h: '$$mdi:apple-keyboard-option$$'}
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ↹, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ⏎, h: right}
+  - {t: ␣, h: left}
+  - {t: '$$mdi:backspace-outline$$', h: '$$mdi:apple-keyboard-control$$'}
+  right:
+  - Esc
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - {t: ▽, type: trans}
+  - Home
+  - ↑
+  - End
+  - Sft+[
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - ;
+  - ←
+  - ↓
+  - →
+  - Sft+]
+  - '&studio_unlock'
+  - Reset
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - (
+  - )
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  left:
+  - '`'
+  - '%'
+  - '|'
+  - AMPS
+  - '='
+  - F1
+  - '7'
+  - '8'
+  - '9'
+  - F4
+  - '!'
+  - '@'
+  - '#'
+  - {t: $, type: held}
+  - Sft+.
+  - F2
+  - '4'
+  - '5'
+  - '6'
+  - F5
+  - ^
+  - '*'
+  - Sft+-
+  - Sft+=
+  - '-'
+  - F3
+  - '1'
+  - '2'
+  - '3'
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ⏎
+  - '0'
